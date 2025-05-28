@@ -1,7 +1,0 @@
-modules = ["c-clang14"]
-run = 'c-clang-14 -pthread -lm -o main main.c \n ./main'
-[nix]
-channel = "stable-24_05"
-
-[deployment]
-run = ["sh", "-c", 'c-clang-14 -pthread -lm -o main main.c \n ./main']
